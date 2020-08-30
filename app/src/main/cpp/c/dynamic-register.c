@@ -15,7 +15,7 @@ jint getCount(JNIEnv *env, jobject jobj){
 
 static const char * mClassName = "com/yasin/explore/DynamicRegister";
 static const JNINativeMethod mMethods[] = {
-        {"getString", "()Ljava/lang/String;", (void*)getString},
+        {"getMessage", "()Ljava/lang/String;", (void*)getString},
         {"getInt", "()I", (void*)getCount},
 };
 

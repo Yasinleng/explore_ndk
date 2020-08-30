@@ -7,6 +7,11 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    static {
+        System.loadLibrary("native-lib");
+    }
+
     // Used to load the 'native-lib' library on application startup.
 
     @Override
@@ -16,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Example of a call to a native method
         TextView tv = findViewById(R.id.sample_text);
-        tv.setText(DynamicRegister.getString()+"");
+        tv.setText(Jni.getString()+"");
     }
 
     /**

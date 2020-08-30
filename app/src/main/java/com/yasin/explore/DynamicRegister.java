@@ -6,12 +6,11 @@ package com.yasin.explore;
  */
 public class DynamicRegister {
 
-    static {
-        System.loadLibrary("native-lib");
-    }
+//    static {
+//        System.loadLibrary("native-lib");
+//    }
 
-
-    public static native String getString();
+    public static native String getMessage();
 
     public static native int getInt();
 
